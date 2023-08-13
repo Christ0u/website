@@ -1,12 +1,8 @@
-/*
-*{
-	color: white;
-	background-color: #282828   ;
+body{
+	min-width: 650px;
 }
-*/
 
-
-
+/*Début gestion thème général*/
 .theme_sombre{
 	background-color: #000000d9;
 	color: white;
@@ -28,9 +24,33 @@
 	background-color: white;
 	color: black;
 }
+/*Fin gestion thème général*/
 
 
 
+/*Début gestion thème footer*/
+.theme_clair_footer{
+	background-color: #b0b0b0;
+	color: black;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.theme_sombre_footer{
+	background-color: #323232;
+	color: white;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.theme_clair_footer_sans_transition{
+	background-color: #b0b0b0;
+	color: black;
+}
+
+.theme_sombre_footer_sans_transition{
+	background-color: #323232;
+	color: white;
+}
+/*Fin gestion thème footer*/
 
 
 
@@ -70,9 +90,18 @@ section {
   flex: 1;
 }
 
+.img_cyber{
+	border-radius: 50%;
+}
 
+.img_clavier, .img_goku, .img_piano, .img_skills{
+	border-radius: 10%;
+}
 
-
+.separateur{
+	width: 50%;
+ 	margin: 0 auto;
+}
 
 /* Style pour la bannière */
 
@@ -80,9 +109,28 @@ section {
 	width: 100%;
 	border-radius: 10px;
 	filter:blur(1.5px);
+	
 }
 
+.banniere{
+	width: 90%;
+	text-align: center;
 
+	border-radius: 10px;
+	background-image: url("../img/pexels-luis-gomes-546819.jpg");
+	background-size: cover;
+  	background-position: center;
+}
+
+.pseudo_banniere{
+	margin: 0;
+	font-size: 150px;
+	-webkit-text-stroke: 2px #fff;
+}
+.nom_banniere{
+	font-size: 50px;
+	-webkit-text-stroke: 1px #fff;
+}
 
 
 
@@ -209,3 +257,74 @@ nav li{
   }
 
 /* Fin style pour le Toggle Switch */
+
+
+
+
+
+
+
+/* Début style formulaire */
+
+.formulaire{
+	margin-left: 20%;
+}
+
+.champ_formulaire{
+	width: 80%;
+}
+
+.champ_message{
+	resize: vertical;
+	/*height: 150px;*/
+}
+
+.bouton_envoie{
+	width: 80%;
+	border-radius: 50px;
+	padding: 6px 32px;
+	text-align: center;
+	background-color: green;
+}
+
+.bouton_envoie:hover,
+.bouton_envoie:focus {
+   opacity: .60;
+}
+
+/*Fin style formulaire*/
+
+
+.div_reseaux, .div_mail, .div_formulaire{
+	margin-left: 10%;
+}
+
+
+
+
+footer{
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid #1b1b1b;
+	border-radius: 30px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.a_venir{
+
+	line-height: 100vh;
+	text-align: center;
+}
